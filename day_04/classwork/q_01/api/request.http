@@ -1,0 +1,20 @@
+POST http://localhost:8080/api/medicine
+Content-Type: application/json
+
+{
+    "medicineName": "Vitamins D",
+    "medicineFor": "Scurvy",
+    "medicineBrand": "fassi",
+    "manufacturedIn": "Mumbai, India",
+    "medicinePrice": "20.50",
+    "expiryDate": "2026-01-19"
+}
+
+
+###
+
+GET http://localhost:8080/api/medicines
+
+###
+
+GET http://localhost:8080/api/medicine/1
