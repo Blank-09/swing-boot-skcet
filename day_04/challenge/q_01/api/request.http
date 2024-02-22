@@ -1,0 +1,21 @@
+POST http://localhost:8080/api/employee
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phoneNumber": "+1 123-456-7890",
+  "address": "123 Main St",
+  "city": "New York",
+  "hireDate": "2022-01-01"
+}
+
+###
+
+GET http://localhost:8080/api/employee/7
+
+###
+
+GET http://localhost:8080/api/employees
+
