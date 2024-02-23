@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "vmware.vscode-boot-dev-pack",
+        "cweijan.dbclient-jdbc",
+        "cweijan.vscode-mysql-client2",
+        "humao.rest-client",
+        "vscjava.vscode-java-pack"
+    ]
+}
