@@ -1,0 +1,16 @@
+POST http://localhost:8080/api/gift
+Content-Type: application/json
+
+{
+  "giftId": 1,
+  "giftName": "Wall Clock",
+  "description": "Time and date ",
+  "price": 200,
+  "category": "clock "
+}
+
+### 
+GET http://localhost:8080/api/gift
+
+### 
+GET http://localhost:8080/api/gift/1
