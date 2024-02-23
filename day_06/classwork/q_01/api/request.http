@@ -1,0 +1,20 @@
+### POST /api/children
+POST http://localhost:8080/api/children
+Content-Type: application/json
+
+{
+    "babyFirstName": "John",
+    "babyLastName": "Doe",
+    "fatherName": "John Doe Sr.",
+    "motherName": "Jane Doe",
+    "address": "123 Main St"
+}
+
+### GET /api/children/sortBy/{field}
+GET http://localhost:8080/api/children/sortBy/babyFirstName
+
+### GET /api/children/{offset}/{pagesize}
+GET http://localhost:8080/api/children/1/10
+
+### GET /api/children/{offset}/{pagesize}/{field}
+GET http://localhost:8080/api/children/0/10/babyFirstName

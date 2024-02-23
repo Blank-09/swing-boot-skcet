@@ -1,0 +1,17 @@
+### Create Student
+POST http://localhost:8080/api/student HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "John Doe",
+    "age": 20,
+    "city": "New York",
+    "rollno": "12345"
+}
+
+### Get Students
+GET http://localhost:8080/api/student?pageSize=10&pageNo=1 HTTP/1.1
+
+### Get Sorted Students
+GET http://localhost:8080/api/student/sort?pageSize=10&pageNo=1&sortBy=name HTTP/1.1
