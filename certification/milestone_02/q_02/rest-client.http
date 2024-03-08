@@ -1,0 +1,33 @@
+### Save Medicine
+POST http://localhost:8080/api/medicine
+Content-Type: application/json
+
+{
+    "medicineId": 1,
+    "name": "Paracetamol",
+    "brand": "ABC",
+    "manufacturedIn": "USA",
+    "price": 10.99,
+    "expiryDate": "2022-12-31"
+}
+
+### Update Medicine
+PUT http://localhost:8080/api/medicine/1
+Content-Type: application/json
+
+{
+    "name": "Paracetamol",
+    "brand": "XYZ",
+    "manufacturedIn": "USA",
+    "price": 12.99,
+    "expiryDate": "2024-12-31"
+}
+
+### Delete Expired Medicine
+DELETE http://localhost:8080/api/medicine/expired
+
+### Get All Medicines
+GET http://localhost:8080/api/medicine
+
+### Get Medicines by Brand
+GET http://localhost:8080/api/medicine/bybrand/ABC

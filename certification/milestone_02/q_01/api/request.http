@@ -1,0 +1,67 @@
+### API endpoints for Institute ###
+
+### Create Institute
+POST http://localhost:8080/api/institute
+Content-Type: application/json
+
+{
+    "instituteId": 1,
+    "instituteName": "Example Institute",
+    "instituteDescription": "Example Institute Description",
+    "instituteAddress": "Example Institute Address",
+    "email": "example@example.com",
+    "contactNumber": "1234567890"
+}
+
+### Create Course for Institute
+POST http://localhost:8080/api/institute/1/course
+Content-Type: application/json
+
+{
+    "courseName": "Example Course",
+    "courseDescription": "Example Course Description",
+    "courseDuration": "Example Course Duration",
+    "courseFees": 100.0,
+    "noOfSeats": 10
+}
+
+### Get all Institutes
+GET http://localhost:8080/api/institute
+
+### Update Institute
+PUT http://localhost:8080/api/institute/1
+Content-Type: application/json
+
+{
+    "instituteName": "Updated Institute Name",
+    "instituteDescription": "Updated Institute Description",
+    "instituteAddress": "Updated Institute Address",
+    "email": "updated@example.com",
+    "contactNumber": "9876543210"
+}
+
+### API endpoints for Course ###
+
+### Get all Courses for an Institute
+GET http://localhost:8080/api/institute/1/course
+
+### Get all Courses
+GET http://localhost:8080/api/institute/course
+
+### Get a Course by ID
+GET http://localhost:8080/api/institute/course/1
+
+### Update a Course
+PUT http://localhost:8080/api/institute/course/1
+Content-Type: application/json
+
+{
+    "courseName": "Updated Course Name",
+    "courseDescription": "Updated Course Description",
+    "courseDuration": "Updated Course Duration",
+    "courseFees": 200.0,
+    "noOfSeats": 20
+}
+
+### Delete a Course
+DELETE http://localhost:8080/api/institute/course/1
